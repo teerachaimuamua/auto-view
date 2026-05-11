@@ -1,10 +1,14 @@
 {
+  "name": "auto-view",
+  "version": "1.0.0",
+  "type": "module",
   "dependencies": {
     "@sparticuz/chromium": "^148.0.0",
     "express": "^5.2.1",
     "puppeteer": "^24.43.1",
     "puppeteer-core": "^24.43.1",
     "puppeteer-extra": "^3.3.6",
-    "puppeteer-extra-plugin-stealth": "^2.11.2"
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "puppeteer-extra-plugin-user-preferences": "^2.4.1"
   }
 }
