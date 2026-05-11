@@ -1,15 +1,9 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "serve8.js",
-      "use": "@vercel/node"
+  "functions": {
+    "index.js": {
+      "includeFiles": "node_modules/puppeteer-extra-plugin-stealth/evasions/**"
     }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "serve8.js"
-    }
-  ]
+  },
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.js" }]
 }
