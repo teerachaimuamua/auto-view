@@ -65,12 +65,13 @@ app.get('/', async (req, res) => {
                 return 'Skipped';
             });
 
-            console.log(`[R${round}-T${threadId}] Result: ${result}`);
+            console.log(`[R${round}-T${threadId}] ผลลัพธ์: ${result}`);
 
         } catch (err) {
             console.error(`[R${round}-T${threadId}] Error: ${err.message}`);
         } finally {
             await browser.close();
+            console.log(`[R${round}-T${threadId}] ปิดหน้าต่าง`);
         }
     }
 
