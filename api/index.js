@@ -13,7 +13,7 @@ const app = express();
 
 app.get('/', async (req, res) => {
     // Immediate response to prevent Vercel gateway timeouts
-    res.json({ message: "Process started (Check Vercel Logs)" });
+    res.json({ message: "Process started (Check Vercel Logsxxx)" });
 
     const isProd = process.env.NODE_ENV === 'production';
 
@@ -33,10 +33,15 @@ app.get('/', async (req, res) => {
         });
 
         try {
+            console.log(1)
             const page = await browser.newPage();
+            console.log(2)
+
             await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36');
+            console.log(3)
 
             await page.goto(CONFIG.VIDEO_URL, { waitUntil: 'networkidle2', timeout: 60000 });
+
             console.log("Page loaded successfully");
 
             // ... rest of your YouTube logic ...
