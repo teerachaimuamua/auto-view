@@ -6,8 +6,8 @@ puppeteer.use(StealthPlugin());
 // ================= [ CONFIGURATION ] =================
 const CONFIG = {
     VIDEO_URL: 'https://www.youtube.com/shorts/LIRXmUBj1nM',
-    THREAD_COUNT: 10,    // จำนวนหน้าต่างที่เปิดพร้อมกันต่อ 1 รอบ
-    TOTAL_ROUNDS: 10,   // จำนวนรอบทั้งหมดที่ต้องการรัน
+    THREAD_COUNT: 1,    // จำนวนหน้าต่างที่เปิดพร้อมกันต่อ 1 รอบ
+    TOTAL_ROUNDS: 1,   // จำนวนรอบทั้งหมดที่ต้องการรัน
     HEADLESS: true,    // true = รันเบื้องหลัง (ประหยัดแรม), false = เปิดหน้าจอโชว์
     WAIT_BETWEEN_ROUNDS: 5000 // เวลารอก่อนเริ่มรอบใหม่ (มิลลิวินาที)
 };
